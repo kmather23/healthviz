@@ -1,0 +1,45 @@
+%header
+	%nav.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-blackbg
+		%a.pure-menu-heading{:href => "#"} MirrorMD
+		%ul
+			%li.pure-menu-selected
+				%a{:href => "#"} Dashboard
+			%li
+				%a{:href => "#"} Graph
+			%li
+				%a{:href => "#"} Create Prescription
+			%li
+				%a{:href => "#"} Prescription History
+			%li
+				%a{:href => "#"} Patient Profile
+					
+%section.dashboard.pure-g-r.clearfix
+	.pure-u-1.dashboard-piece-logo
+		%h1 Mark Ellis
+
+-#row 1: Mood
+%section.dashboard.pure-g-r.clearfix
+	.pure-u-1.dashboard-piece.dashboard-piece-redbg#Mood{:datahref => "datacrunch.html#Mood"}
+		.dashboard-content			
+			%p.dashboard-metric Mood
+
+-#row 2: Medication & Sleep
+%section.dashboard.pure-g-r.clearfix
+	.pure-u-1-2.dashboard-piece.dashboard-piece-bluebg
+		.dashboard-content
+			%p.dashboard-metric Medication
+	.pure-u-1-2.dashboard-piece.dashboard-piece-orangebg
+		.dashboard-content
+			%p.dashboard-metric Sleep
+
+-#row 3: Exercise & Life Events
+%section.dashboard.pure-g-r.clearfix
+	.pure-u-1-2.dashboard-piece.dashboard-piece-yellowbg
+		.dashboard-content
+			%p.dashboard-metric Exercise
+	.pure-u-1-2.dashboard-piece.dashboard-piece-purplebg
+		.dashboard-content
+			%p.dashboard-metric Life Events
+
+-#additional scripts
+-#%script{:src => "javascripts/dashboard.js", :type => "text/javascript"}
