@@ -1,0 +1,48 @@
+%header
+	%nav.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-blackbg
+		%a.pure-menu-heading{:href => "#"} MirrorMD
+		%ul
+			%li
+				%a{:href => "#"} Dashboard
+			%li
+				%a{:href => "#"} Graph
+			%li.pure-menu-selected
+				%a{:href => "#"} Create Prescription
+			%li
+				%a{:href => "#"} Prescription History
+			%li
+				%a{:href => "#"} Patient Profile
+
+%div#nav Physician Dashboard
+%div#header
+	%h1 Perscription
+
+%table
+	%tr
+		%th Event
+		%th Description
+		%th Quantity
+		%th Period
+	%tr 
+		%td Mood
+		%td Depressive Symptoms
+		%td n/a
+		%td weekly
+	%tr 
+		%td Excercise
+		%td Swimming, running, karate
+		%td 60 min
+		%td weekly
+	%tr 
+		%td Medicine
+		%td Wellbutrin
+		%td 300mg
+		%td 1x/day
+	
+	%tr 
+		%td Sleep
+		%td schedule
+		%td 8hrs
+		%td nightly
+%br
+%button Add item
