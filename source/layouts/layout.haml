@@ -13,15 +13,14 @@
 	%link{:href => "http://weloveiconfonts.com/api/?family=fontawesome", :rel => "stylesheet"}
 	%script{:src => "javascripts/modernizr-2.6.2.min.js", :type => "text/javascript"}
 	%script{:src => "javascripts/jquery-1.9.1.min.js", :type => "text/javascript"}
+	-# our own links
+	%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
+	%script{:src => "javascripts/dashboard.js", :type => "text/javascript"}
 
 	-# for prescription page
 	%script{:src => "javascripts/jquery-ui.js", :type => "text/javascript"}
 	%script{:src => "javascripts/bootstrap.min.js", :type => "text/javascript"}
 
-	-# our own links
-	%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
-	%script{:src => "javascripts/dashboard.js", :type => "text/javascript"}
-	
 	%body
 		= yield
 		= render_partial 'footer'
