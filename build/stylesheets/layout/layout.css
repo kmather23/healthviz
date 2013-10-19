@@ -1,0 +1,19 @@
+/* line 1, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-center {
+  margin: 0 auto; }
+
+/* line 4, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-dark {
+  color: #ddd; }
+
+/* line 5, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-dark .pure-table-odd {
+  color: #444; }
+
+/* line 7, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+footer {
+  background: #141414;
+  color: #aaa;
+  padding: 10px;
+  font-size: 0.6em;
+  font-weight: bold; }
