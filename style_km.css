@@ -1,0 +1,584 @@
+/* changes/additions are seen in the following sections, found in this file in lines ~387-421 to accomodate 
+perscription.html
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+  text-align: center;
+  width: 800px;
+  align: center;
+}
+#submit-form-button {
+}
+}
+
+caption {
+  font-size: 1.5em;
+  
+}
+
+#prescription-form {
+}
+
+#show-form-button {
+text-align:left;
+}
+
+tr {
+  text-align: left;
+  border-style:solid;
+  border-width:3px;
+  border-color:white;
+}
+
+td{
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+}
+
+---------------------------------------------END OF CHANGES---------------------------------------------
+*/
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 22, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 154, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 190, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 270, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 282, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 317, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 341, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 350, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/base/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+  text-align: center;
+  width: 800px;
+  align: center;
+}
+#submit-form-button {
+}
+}
+
+caption {
+  font-size: 1.5em;
+  
+}
+
+#prescription-form {
+}
+
+#show-form-button {
+text-align:left;
+}
+
+tr {
+  text-align: left;
+  border-style:solid;
+  border-width:3px;
+  border-color:white;
+}
+
+td{
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+}
+/* line 1, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-center {
+  margin: 0 auto; }
+
+/* line 4, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-dark {
+  color: #ddd; }
+
+/* line 5, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+.pure-table-dark .pure-table-odd {
+  color: #444; }
+
+/* line 7, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/layout/layout.scss */
+footer {
+  background: #141414;
+  color: #aaa;
+  padding: 10px;
+  font-size: 0.6em;
+  font-weight: bold; }
+
+/* line 1, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece {
+  min-height: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px; }
+
+/* line 11, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-redbg {
+  background-color: #E73F3F; }
+
+/* line 14, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-orangebg {
+  background-color: #F76C27; }
+
+/* line 17, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-yellowbg {
+  background-color: #E7E737; }
+
+/* line 20, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-bluebg {
+  background-color: #6D9DD1; }
+
+/* line 23, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-purplebg {
+  background-color: #7E45D3; }
+
+/* line 26, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-graybg {
+  background-color: #798388; }
+
+/* line 29, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-piece-logo h1 {
+  /*     line-height: 50px; */
+  color: black; }
+
+/*
+.dashboard-piece-logo svg {
+    margin-top: 80px;
+}
+
+.dashboard-piece h1 {
+    line-height: 50px;
+    font-size: 3.6em;
+    margin: 0;
+}
+*/
+/* line 45, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-content {
+  position: relative;
+  z-index: 999; }
+
+/* line 49, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-content p {
+  font-weight: lighter; }
+
+/* line 52, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-content .light {
+  opacity: 0.4;
+  display: block; }
+
+/* line 56, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-content h2 i {
+  font-size: 4em;
+  opacity: 0.4; }
+
+/* line 60, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-metric {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  line-height: 1; }
+
+/* line 65, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.dashboard-metric i {
+  margin-right: 0.6em; }
+
+/* line 71, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.bar-horizontal {
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  display: block;
+  margin-top: 20px; }
+
+/* line 78, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.bar-horizontal-bar {
+  background: #fff;
+  height: 36px;
+  line-height: 36px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 91, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_dashboard.scss */
+.bar-vertical {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(200, 200, 200, 0.5); }
+
+/* line 1, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu {
+  font-weight: lighter; }
+
+/* line 5, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-fixed {
+  position: fixed; }
+
+/* line 8, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg {
+  background: #222; }
+
+/* line 11, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg .pure-menu-heading:hover {
+  color: #efefef; }
+
+/* line 14, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg a {
+  color: #fff; }
+
+/* line 17, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg a:hover {
+  background: #666; }
+
+/* line 20, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg .pure-menu-selected a {
+  background: #7E45D3;
+  /* will be replaced to #7E45D3 */ }
+
+/* line 23, /Users/kpytang/Dev/Web/sites/healthviz/source/stylesheets/modules/_menu.scss */
+.pure-menu.pure-menu-blackbg .pure-menu-selected a:hover {
+  color: #efefef; }
